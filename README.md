@@ -7,3 +7,6 @@ Programas de preguntas y respuestas:
    <li> Preguntas y respuestas complejo:  roaring-kashata-bffb9f.netlify.app  </li>
    <li> Preguntas y respuestas con materialize.css:  heartfelt-bienenstitch-509b9a.netlify.app  </li>
  </ul>
+ 
+ Si desea descargar para usar de forma local entrar al archivo program.html
+ Si desea subir el programa a otro servidor cambiarle el nombre del archivo de "program.html" a "index.html"
