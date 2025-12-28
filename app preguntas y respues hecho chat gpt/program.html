@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App de Preguntas y Respuestas</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 font-sans">
+    <div class="container mx-auto p-6">
+        <h1 class="text-3xl font-bold text-center mb-6">¡Bienvenido a la App de Preguntas y Respuestas!</h1>
+
+        <!-- Sección de categorías -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="category-card bg-blue-500 p-4 rounded-lg text-white text-center shadow-lg">
+                <h2 class="text-2xl font-semibold mb-4">Ciencia</h2>
+                <button onclick="startQuiz('ciencia')" class="bg-white text-blue-500 p-2 rounded-lg hover:bg-blue-200 transition-all">Iniciar Quiz</button>
+            </div>
+
+            <div class="category-card bg-green-500 p-4 rounded-lg text-white text-center shadow-lg">
+                <h2 class="text-2xl font-semibold mb-4">Tecnología</h2>
+                <button onclick="startQuiz('tecnologia')" class="bg-white text-green-500 p-2 rounded-lg hover:bg-green-200 transition-all">Iniciar Quiz</button>
+            </div>
+
+            <div class="category-card bg-purple-500 p-4 rounded-lg text-white text-center shadow-lg">
+                <h2 class="text-2xl font-semibold mb-4">Literatura</h2>
+                <button onclick="startQuiz('literatura')" class="bg-white text-purple-500 p-2 rounded-lg hover:bg-purple-200 transition-all">Iniciar Quiz</button>
+            </div>
+        </div>
+
+        <!-- Aquí iría el contenido del quiz -->
+        <div id="quiz" class="hidden mt-6">
+            <h3 id="question" class="text-2xl mb-4"></h3>
+            <div id="answers" class="space-y-2">
+                <!-- Las opciones de respuesta se agregarán dinámicamente -->
+            </div>
+            <button id="next-btn" class="mt-4 bg-blue-500 text-white p-2 rounded-lg hidden">Siguiente Pregunta</button>
+        </div>
+    </div>
+
+    <script src="program.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</body>
+</html>
+

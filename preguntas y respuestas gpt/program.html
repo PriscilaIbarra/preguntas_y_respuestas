@@ -1,0 +1,40 @@
+<body class="bg-gradient-to-r from-blue-500 to-purple-600 min-h-screen flex items-center justify-center">
+
+  <div class="bg-white p-8 rounded-xl shadow-lg w-full max-w-md text-center">
+    
+    <h1 class="text-3xl font-bold text-gray-800 mb-6">
+      App de Preguntas
+    </h1>
+
+    <select 
+      id="categoria"
+      class="w-full mb-4 p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+    >
+      <option value="ciencia">Ciencia</option>
+      <option value="tecnologia">Tecnología</option>
+      <option value="literatura">Literatura</option>
+    </select>
+
+    <button 
+      onclick="mostrarPregunta()"
+      class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition"
+    >
+      Comenzar
+    </button>
+
+    <h2 id="pregunta" class="mt-6 text-lg font-semibold text-gray-700"></h2>
+
+    <div id="opciones" class="mt-4 space-y-2"></div>
+
+    <p class="mt-6 text-xl font-bold text-gray-800">
+      Puntaje: <span id="puntaje" class="text-green-600">0</span>
+    </p>
+
+  </div>
+
+  <script src="program.js"></script>
+  <script src="preguntas.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+</body>
+
