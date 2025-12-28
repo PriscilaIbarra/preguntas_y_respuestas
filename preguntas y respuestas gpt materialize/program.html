@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App de Preguntas y Respuestas</title>
+
+    <!-- Materialize CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+</head>
+<body class="blue-grey lighten-5">
+
+    <div class="container">
+        <!-- Título de la Aplicación -->
+        <h1 class="center-align teal-text text-darken-3">¡Bienvenido al Quiz!</h1>
+
+        <!-- Sección de selección de categorías -->
+        <div class="row">
+            <div class="col s12 m4">
+                <button id="cienciaBtn" class="btn waves-effect waves-light teal">Ciencia</button>
+            </div>
+            <div class="col s12 m4">
+                <button id="tecnologiaBtn" class="btn waves-effect waves-light blue">Tecnología</button>
+            </div>
+            <div class="col s12 m4">
+                <button id="literaturaBtn" class="btn waves-effect waves-light deep-purple">Literatura</button>
+            </div>
+        </div>
+
+        <!-- Pregunta y respuestas (Ocultas inicialmente) -->
+        <div id="quizSection" class="row" style="display:none;">
+            <div class="col s12">
+                <h3 id="questionText" class="center-align">Pregunta...</h3>
+                <div id="answers" class="center-align">
+                    <!-- Las respuestas se cargarán dinámicamente -->
+                </div>
+                <div id="score" class="center-align">
+                    <h4>Puntaje: <span id="scoreValue">0</span></h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Materialize JS y jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <!-- Tu archivo JavaScript -->
+    <script src="program.js"></script>
+</body>
+</html>
+
